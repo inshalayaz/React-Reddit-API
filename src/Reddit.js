@@ -18,7 +18,10 @@ function Reddit(){
         <div>
         <ul>
             {posts.map(post => (
-                <li key = {post.id}>{post.title}</li>
+                <li key = {post.id}>
+               <a href={`${post.url}`} target="_"> {post.title} </a> <br/>
+                
+                </li>
             ))}
             </ul>
         </div>
