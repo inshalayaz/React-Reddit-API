@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-
+import './Reddit.css'
 import axios from 'axios'
 function Reddit(){
     const [posts,setPosts] = useState([])
@@ -15,7 +15,7 @@ function Reddit(){
 
     }, [])
     return(
-        <div>
+        <div className = "reddit">
         <ul>
             {posts.map(post => (
                 <li key = {post.id}>
